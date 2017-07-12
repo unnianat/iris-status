@@ -6,7 +6,7 @@ const request = require('superagent');
 
 require('dotenv').config({path: '../.env'});
 
-service.get('/service/:location', (req, res, next) => {
+service.get('/service/:location/:text', (req, res, next) => {
 	var temp = "hello";
 	var tktnum=req.params.location;
 	var assignee;
